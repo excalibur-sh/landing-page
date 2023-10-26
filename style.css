@@ -1,0 +1,185 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+}
+
+/* ==============HOME CSS========= */
+#home {
+    width: 100%;
+    height: 100vh;
+    background-image: url(img/backdrop4.jpg);
+    background-position: center;
+    text-align: center;
+    background-size: cover;
+}
+
+/* ================NAVBAR CSS=============== */
+
+.nav {
+    /* padding-left: 1.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0rem;
+    padding-bottom: .7rem;
+    /* background-color: rgba(206, 38, 38, 0.533); */
+    transition: 0.3s ease;
+}
+
+.nav ul {
+    display: flex;
+    text-align: center;
+    padding-top: .5rem;
+}
+
+.nav ul li {
+    padding: 0.5rem;
+    list-style: none;
+}
+
+.nav ul li:hover {
+    transform: scale(1.1);
+}
+
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: .5rem;
+    transition: 0.5s ease;
+}
+
+.nav ul li a:hover {
+    /* background-color: cadetblue; */
+    /* border-radius: .2rem; */
+    color: cadetblue;
+    text-decoration: underline;
+}
+
+
+
+/* =========HOME CONTENT CSS=========== */
+
+.home-content {
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.home-content h1 {
+    padding-bottom: 2rem;
+    font-weight: bold;
+    font-size: 3.2rem;
+    color: rgb(222, 71, 71);
+    text-decoration: underline;
+    text-underline-offset: .5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.type {
+    color: rgb(215, 30, 30);
+}
+
+.typing {
+    color: red;
+}
+
+.home-content p {
+    display: flex;
+    font-size: 1.1rem;
+    width: 45rem;
+    color: white;
+    text-align: justify;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.btn {
+    background-image: linear-gradient(to right, #700404 25%, #7c2626 51%, #ff0000 100%);
+    margin: 1rem 0rem 1rem 0rem;
+    padding: .5rem .9rem;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btn a {
+    color: white;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-position: right;
+    background: transparent;
+    border: 2px solid red;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+/* =====================MEIDA QUERY=========== */
+
+@media screen and (min-width:900px) {
+    .home-content {
+        padding-top: 12rem;
+    }
+}
+
+
+
+@media screen and (max-width:798px) {
+    #home {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .nav {
+        text-align: center;
+        padding-bottom: 1rem;
+        background-color: rgba(255, 0, 0, 0.452);
+    }
+
+    .nav ul li a {
+        padding: 0px;
+    }
+
+    .home-content {
+        padding-top: 4rem;
+        padding-bottom: 5rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-content h1 {
+        text-align: center;
+    }
+
+    .home-content p {
+        text-align: center;
+        max-width: 20rem;
+        margin: auto;
+        padding-right: 0rem;
+        /* padding: 0 1rem 0 1rem; */
+    }
+
+    .btn {
+        margin-top: 2rem;
+    }
+}
